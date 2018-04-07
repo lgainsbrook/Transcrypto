@@ -1,4 +1,4 @@
-# dlmp
+# Transcrypto
 Code for CryptoChicks hackathon
 
 # style info
