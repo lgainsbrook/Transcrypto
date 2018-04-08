@@ -1,18 +1,18 @@
 
-  var elem = document.querySelector('select');
-  var instance = M.FormSelect.init(elem, options);
+//   var elem = document.querySelector('select');
+//   //var instance = M.FormSelect.init(elem, options);
 
-  // Or with jQuery
+//   // Or with jQuery
 
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
+//   $(document).ready(function(){
+//     $('select').formSelect();
+//   });
 
 
-function send_data() {
-    let student_num = document.getElementById('student_num').value;
-    let university = document.getElementById('select_uni').value;
-}
+// function send_data() {
+//     let student_num = document.getElementById('student_num').value;
+//     let university = document.getElementById('select_uni').value;
+// }
 
 
 
