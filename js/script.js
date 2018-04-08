@@ -1,12 +1,11 @@
-
   var elem = document.querySelector('select');
   var instance = M.FormSelect.init(elem, options);
 
-  // Or with jQuery
+//   // Or with jQuery
 
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
+//   $(document).ready(function(){
+//     $('select').formSelect();
+//   });
 
 
 function send_data() {
@@ -17,17 +16,11 @@ function send_data() {
     document.getElementById("disappear2").style.display = 'none';
     document.getElementById("select_uni").style.display = 'none';
     remove_button();
-
-
 }
 function remove_button() {
     document.getElementById("button").style.display = 'none';
     document.getElementById("appear").style.display = 'block';
-
 }
-
-
-
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
