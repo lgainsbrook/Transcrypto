@@ -14,5 +14,7 @@ function send_data() {
     let university = document.getElementById('select_uni').value;
 }
 
+
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

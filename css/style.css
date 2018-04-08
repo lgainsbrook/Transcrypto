@@ -6,12 +6,14 @@
  * Made By MaterializeCSS.com
  */
 
- html {
-   background: linear-gradient(#eb8f8c, #f9c7a1);
-   height-min: 100%;
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(#df244a, #ed8256);
+   color: white;
  }
 
- 
 
 
 nav ul a,
