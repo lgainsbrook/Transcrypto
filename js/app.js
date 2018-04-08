@@ -189,12 +189,15 @@ function signTranscript() {
   return MyContract.call.signTranscript(address, hash, function (err, result){console.log(result)})
 };
 
-function isValid() {
+function isSigned() {
+  // This is going to take a while, so update the UI to let the user know
+  // the transaction has been sent
+  $("#txStatus").text("Verifying document. This may take a while...");
+
   let address = "0xc429cC3Ec9B840A9b46b10E49E5a223C292Bc3b5";//SET UNIVERSITY ADDRESS
   let hash = document.getElementById("signedFileHash").value = HEXHash;
   let account = web3.eth.accounts[0];
-  
-  document.getElementById("valid-check").style.display = '';
+
   return MyContract.call.isSigned(address, hash, function (err, result){
     console.log(result)
   });
