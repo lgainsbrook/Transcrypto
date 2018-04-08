@@ -34,6 +34,13 @@
 <br/>
             <label for="student_num">Search by Student Number</label>
             <input id="student_num" type="number">
+            <form onsubmit="javascript:search_completed(); return false">
+                    <div id="main-focus-question"></div>
+                    <input id="search_query" type="text" placeholder=""/>
+                <input type="submit" />
+            </form>
+            <div id="query_result"></div>
+
 <br/><br/>
 <table style="width:100%">
   <tr>
@@ -86,7 +93,7 @@
                   <form onsubmit="javascript:search_completed(); return false">
                           <div id="main-focus-question"></div>
                           <input id="search_query" type="text" placeholder=""/>
-                      <input type="submit" style="display:none" />
+                      <input type="submit" />
                   </form>
                 <div id="query_result"></div>
 
