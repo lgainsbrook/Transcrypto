@@ -3,6 +3,7 @@ function send_transcript() {
 }
 
 function search_completed() {
+    document.getElementById('query_result').innerHTML = "Hello";
     let completed_requests = [
         {Name: "Billy Jean",
         Id: 1234},

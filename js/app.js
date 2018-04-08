@@ -166,6 +166,7 @@ function init() {
     }
   ];
   var address = '0xB015214CBd5be80DFb9E53F07D27e622948BB312';
+  var web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
   MyContract.call = web3.eth.contract(abi).at(address);
 };
 
