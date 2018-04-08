@@ -6,9 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
- html {
+ html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
    background: linear-gradient(#df244a, #ed8256);
-   height-min: 100%;
+   color: white;
  }
 
 

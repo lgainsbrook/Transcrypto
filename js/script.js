@@ -15,5 +15,7 @@ function send_data() {
     console.log(student_num, university);
 }
 
+
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
