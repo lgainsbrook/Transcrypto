@@ -4534,6 +4534,7 @@ h2 {
   font-size: 3.56rem;
   line-height: 110%;
   margin: 2.3733333333rem 0 1.424rem 0;
+  color: #d3d3d3;
 }
 
 h3 {
@@ -4546,6 +4547,7 @@ h4 {
   font-size: 2.28rem;
   line-height: 110%;
   margin: 1.52rem 0 0.912rem 0;
+  color: #ffffff;
 }
 
 h5 {
@@ -6081,24 +6083,24 @@ button:focus {
 }
 
 label {
-  font-size: 0.8rem;
-  color: #9e9e9e;
+  font-size: 1.2rem;
+  color: #d3d3d3;
 }
 
 /* Text Inputs + Textarea
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color: #d3d3d3;
 }
 ::-moz-placeholder {
-  color: #d1d1d1;
+  color: #d3d3d3;
 }
 :-ms-input-placeholder {
-  color: #d1d1d1;
+  color: #d3d3d3;
 }
 ::placeholder {
-  color: #d1d1d1;
+  color: #d3d3d3;
 }
 
 /* Text inputs */
@@ -6117,7 +6119,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #d3d3d3;
   border-radius: 0;
   outline: none;
   height: 3rem;
