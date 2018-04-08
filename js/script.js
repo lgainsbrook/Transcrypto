@@ -1,5 +1,12 @@
-var elem = document.querySelector('.dropdown-trigger');
-var instance = M.Dropdown.init(elem, options);
+
+  var elem = document.querySelector('select');
+  var instance = M.FormSelect.init(elem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
 
 
 function send_data() {
