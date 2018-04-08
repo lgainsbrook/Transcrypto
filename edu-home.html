@@ -29,9 +29,7 @@
 <div id="student_num">
 </div>
 
-  <button id="button" onclick="send_transcript()" class="btn waves-effect waves-light" type="submit" name="action">Display Student
-  <i class="material-icons right">send</i>
-  </button>
+
 
   <!--   SEARCH COMPLETED REQUESTS   -->
   <div id="query_result"></div>
@@ -63,22 +61,40 @@
             <label for="student_num">Student Number</label>
             <input id="student_num" type="number">
 <br/><br/>
-
-<label>University</label><br/>
+<table style="width:100%">
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>ID</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Billy</td>
+    <td>Jean</td>
+    <td>1234</td>
+    <td><button id="button" class="btn waves-effect waves-light" type="submit" name="action">Upload
+    <i class="material-icons right">send</i></button>
+    </td>
+  </tr>
+  <tr>
+    <td>Maggie</td>
+    <td>May</td>
+    <td>5678</td>
+  </tr>
+</table>
+<!-- <label>University</label><br/>
 <select id="select_uni" class="browser-default">
   <option value="" disabled selected>Choose your option</option>
   <option value="University of Toronto">University of Toronto</option>
   <option value="University of Ottawa">University of Ottawa</option>
-</select>
+</select> -->
 <br/><br/>
 
-                  <button id="button" onclick="send_data()" class="btn waves-effect waves-light" type="submit" name="action">Submit Request
+                  <!-- <button id="button" onclick="send_data()" class="btn waves-effect waves-light" type="submit" name="action">Details
   <i class="material-icons right">send</i>
-</button>
+</button> -->
           </div>
         </div>
-
-
 
         <div class="col s12 m4">
           <div class="icon-block">

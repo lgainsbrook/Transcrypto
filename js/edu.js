@@ -2,15 +2,11 @@ function send_transcript() {
     document.getElementById('student_num').innerHTML = "Student Number: " + 193755 + "Student Name: Mariya Mannes";
 }
 
-function upload_file() {
-
-}
-
 function search_completed() {
     let completed_requests = [
         {Name: "Billy Jean",
         Id: 1234},
-        {Name: "Sweet Caroline",
+        {Name: "Maggie May",
         Id: 5678}
     ];
     let query = document.getElementById('search_query').value;
