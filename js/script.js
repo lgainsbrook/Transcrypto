@@ -1,14 +1,15 @@
 
-  var elem = document.querySelector('select');
-  var instance = M.FormSelect.init(elem, options);
+//   var elem = document.querySelector('select');
+//   //var instance = M.FormSelect.init(elem, options);
 
-  // Or with jQuery
+//   // Or with jQuery
 
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
+//   $(document).ready(function(){
+//     $('select').formSelect();
+//   });
 
 
+<<<<<<< HEAD
 function send_data() {
     // let student_num = document.getElementById('student_num').value;
     // let university = document.getElementById('select_uni').value;
@@ -26,6 +27,12 @@ function remove_button() {
 
 }
 
+=======
+// function send_data() {
+//     let student_num = document.getElementById('student_num').value;
+//     let university = document.getElementById('select_uni').value;
+// }
+>>>>>>> 037660b7a504b350a932125f578b059019bc31e9
 
 
 

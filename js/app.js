@@ -1,3 +1,4 @@
+var web3 = new Web3(Web3.givenProvider || "https://ropsten.infura.io/sQUmuUgnDyT7GYrZA2hZ");
 var userAccount;
 let HEXHash = "d6bbfa551ffc6ed408c30a628176cff4896d0d434d0e1fabfa0a0c214a60352a";
 
@@ -165,7 +166,7 @@ function init() {
       "type": "event"
     }
   ];
-  var address = '0xB015214CBd5be80DFb9E53F07D27e622948BB312';
+  var address = '0xB015214CBd5be80DFb9E53F07D27e622948BB312';  
   MyContract.call = web3.eth.contract(abi).at(address);
 };
 
@@ -189,12 +190,11 @@ function signTranscript() {
   return MyContract.call.signTranscript(address, hash, function (err, result){console.log(result)})
 };
 
-function isValid() {
+function isSigned() {
   let address = "0xc429cC3Ec9B840A9b46b10E49E5a223C292Bc3b5";//SET UNIVERSITY ADDRESS
   let hash = document.getElementById("signedFileHash").value = HEXHash;
   let account = web3.eth.accounts[0];
-  
-  document.getElementById("valid-check").style.display = '';
+
   return MyContract.call.isSigned(address, hash, function (err, result){
     console.log(result)
   });
