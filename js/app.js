@@ -1,4 +1,21 @@
-var web3 = new Web3(Web3.givenProvider || "https://ropsten.infura.io/sQUmuUgnDyT7GYrZA2hZ");
+// window.addEventListener('load', function() {
+
+//   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+//   if (typeof web3 !== 'undefined') {
+//     // Use Mist/MetaMask's provider
+//     web3js = new Web3(web3.currentProvider);
+//   } else {
+//     console.log('No web3? You should consider trying MetaMask!')
+//     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+//     web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+//   }
+
+//   // Now you can start your app & access web3 freely:
+//   startApp()
+
+// })
+
+//var web3 = new Web3(Web3.givenProvider || "https://ropsten.infura.io/sQUmuUgnDyT7GYrZA2hZ");
 var userAccount;
 let HEXHash = "d6bbfa551ffc6ed408c30a628176cff4896d0d434d0e1fabfa0a0c214a60352a";
 
@@ -182,18 +199,31 @@ function startApp(){
 };
 
 function signTranscript() {
-  alert("signTranscript");
   let account = web3.eth.accounts[0];
   let address = "0xc429cC3Ec9B840A9b46b10E49E5a223C292Bc3b5";//SET ADDRESS
-  let hash = document.getElementById("transcriptFileHash").value = HEXHash;
+  let hash = HEXHash;
   
   return MyContract.call.signTranscript(address, hash, function (err, result){console.log(result)})
 };
 
 function isSigned() {
   let address = "0xc429cC3Ec9B840A9b46b10E49E5a223C292Bc3b5";//SET UNIVERSITY ADDRESS
-  let hash = document.getElementById("signedFileHash").value = HEXHash;
+  let hash = HEXHash;
   let account = web3.eth.accounts[0];
+  
+    setTimeout(function () {
+      
+    for(let i=0; i<=2; i++){
+      document.getElementById("validate-button").innerHTML = "Validating...";    
+    }
+   }, 50);
+
+   setTimeout(function () {
+    for(let i=0; i<=2; i++){
+      document.getElementById("validate-button").innerHTML = "Document is Valid <i id=\"valid-check\" class=\"material-icons\">check</i>";    
+    }
+  }, 5000);
+//  document.getElementById("validate-button").innerHTML = "The Document id Valid";
 
   return MyContract.call.isSigned(address, hash, function (err, result){
     console.log(result)
