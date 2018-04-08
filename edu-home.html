@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <title>Transcrypto</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo"><img src="imgs/logo.png" height="75px"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m8">
+          <div class="icon-block">
+            <h2 class="center text"><i class="material-icons">message</i></h2>
+            <h4 class="center">Outstanding Requests</h4>
+<br/>
+            <label for="student_num">Search by Student Number</label>
+            <input id="student_num" type="text">
+            <form onsubmit="javascript:search_completed(); return false">
+            <!-- <div id="main-focus-question"></div> -->
+            <!-- <input id="search_query" type="text" placeholder=""/> -->
+            <button id="search_query" class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+            </form>
+            <div id="query_result"></div>
+
+<br/><br/>
+<table style="width:100%">
+  <tr>
+    <th>First</th>
+    <th>Last</th>
+    <th>ID</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Billy</td>
+    <td>Jean</td>
+    <td>1234</td>
+    <td><button id="button" class="btn waves-effect waves-light" type="submit" name="action"  onclick="signTranscript()">Upload</button>
+    </td>
+  </tr>
+  <tr>
+    <td>Maggie</td>
+    <td>May</td>
+    <td>5678</td>
+    <td><button id="button" class="btn waves-effect waves-light" type="submit" name="action" onclick="signTranscript()">Upload</button>
+    </td>
+  </tr>
+</table>
+<br/><br/>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center text"><i class="material-icons">details</i></h2>
+            <h4 class="center">Completed Requests</h4>
+
+            <p class="light">
+
+                <!--   SEARCH COMPLETED REQUESTS   -->
+                <!-- <div id="query_result"></div>
+
+                <form onsubmit="search_completed()">
+                    <input type="text" id="search_query">
+
+              </form> -->
+
+                  <!--   SEARCH COMPLETED REQUESTS   -->
+                  <!-- <form onsubmit="search_completed(); return false">
+                      <label for="search_query">Search by Student Number</label>
+                      <input type="text">
+                      <button id="seach_query" class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+                  </form> -->
+
+                  <form onsubmit="javascript:search_completed(); return false">
+                          <div id="main-focus-question"></div>
+                           <input id="search_query" type="text" placeholder=""/> 
+                      <!-- <input type="submit" /> -->
+                      <button id="search_query" class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+                  </form>
+                <div id="query_result"></div>
+
+                <br/><br/>
+                <table style="width:100%">
+                    <tr>
+                      <th>First</th>
+                      <th>Last</th>
+                      <th>ID</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Ada</td>
+                      <td>Lovelace</td>
+                      <td>4443</td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Steve</td>
+                      <td>Jobs</td>
+                      <td>9922</td>
+                      </td>
+                    </tr>
+                  </table>
+
+           </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+ <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"></h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <!--<ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>-->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        <!--  <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>-->
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+    <!--  Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>-->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/edu.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
+</html>

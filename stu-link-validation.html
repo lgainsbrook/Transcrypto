@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <title>Transcrypto</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo"><img src="imgs/logo.png" height="75px"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"></a></li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        
+        <div class="col s12 m4">
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center text"><i class="material-icons check-outline">check</i></h2>
+            <h4 class="center">Validate Transcript</h4>
+<br/>
+            <label for="student_num">Select file</label>         
+            <input type="file" id="signedFile"  onchange="uploadFile()" >
+<br/><br/>
+
+            <label>University</label><br/>
+            <select id="select_uni" class="browser-default">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="University of Toronto">University of Toronto</option>
+              <option value="University of Ottawa">University of Ottawa</option>
+            </select>
+            <br/><br/>
+
+            <button id="validate-button" onclick="isSigned()" class="btn waves-effect waves-light" type="submit" name="action">VALIDATE
+          </button  onclick="isValid()" >
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+ <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"></h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <!--<ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>-->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        <!--  <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>-->
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+    <!--  Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>-->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+
+  </body>
+</html>
