@@ -26,18 +26,18 @@
 
 
 <!--   SHOW STUDENT   -->
-<div id="student_num">
-</div>
+<!-- <div id="student_num">
+</div> -->
 
 
 
   <!--   SEARCH COMPLETED REQUESTS   -->
-  <div id="query_result"></div>
+  <!-- <div id="query_result"></div>
 
   <form onsubmit="search_completed()">
       <input type="text" id="search_query">
       <input type="submit">
-</form>
+</form> -->
 
 
 
@@ -80,6 +80,8 @@
     <td>Maggie</td>
     <td>May</td>
     <td>5678</td>
+    <td><button id="button" class="btn waves-effect waves-light" type="submit" name="action">Upload<i class="material-icons right">send</i></button>
+    </td>
   </tr>
 </table>
 <!-- <label>University</label><br/>
@@ -102,6 +104,20 @@
             <h4 class="center">Completed Requests</h4>
 
             <p class="light">
+
+
+
+                  <!--   SEARCH COMPLETED REQUESTS   -->
+                  <div id="query_result"></div>
+
+                  <form onsubmit="search_completed()">
+                      <input type="text" id="search_query">
+                     <!-- <input type="submit">-->
+
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  <i class="material-icons right">send</i>
+</button>
+                </form>
 
            </p>
           </div>
