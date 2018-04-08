@@ -10,9 +10,22 @@
 
 
 function send_data() {
-    let student_num = document.getElementById('student_num').value;
-    let university = document.getElementById('select_uni').value;
+    // let student_num = document.getElementById('student_num').value;
+    // let university = document.getElementById('select_uni').value;
+    document.getElementById("disappear1").style.display = 'none';
+    document.getElementById("student_num").style.display = 'none';
+    document.getElementById("disappear2").style.display = 'none';
+    document.getElementById("select_uni").style.display = 'none';
+    remove_button();
+
+
 }
+function remove_button() {
+    document.getElementById("button").style.display = 'none';
+    document.getElementById("appear").style.display = 'block';
+
+}
+
 
 
 
