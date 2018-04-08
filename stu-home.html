@@ -35,22 +35,29 @@
             <h2 class="center text"><i class="material-icons">message</i></h2>
             <h4 class="center">Request a Transcript</h4>
 <br/>
+<div id="appear" style="display:none">
+    Thank you, Your transcript is on its way. You should receive a confirmation email shortly.
+</div>
+        <div id="disappear1">
             <label for="student_num">Student Number</label>
+        </div>
             <input id="student_num" type="number">
 <br/><br/>
-
-<label>University</label><br/>
+<div id="disappear2">
+    <label>University</label><br/>
+</div>
 <select id="select_uni" class="browser-default">
   <option value="" disabled selected>Choose your option</option>
   <option value="University of Toronto">University of Toronto</option>
   <option value="University of Ottawa">University of Ottawa</option>
 </select>
 <br/><br/>
-
+<div id="disappear3">
                   <button id="button" onclick="send_data()" class="btn waves-effect waves-light" type="submit" name="action">Submit Request
   <i class="material-icons right">send</i>
 </button>
-          </div>
+</div>
+</div>
         </div>
 
 
