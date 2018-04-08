@@ -25,6 +25,31 @@
   </nav>
 
 
+<!--   SHOW STUDENT   -->
+<div id="student_num">
+</div>
+
+  <button id="button" onclick="send_transcript()" class="btn waves-effect waves-light" type="submit" name="action">Display Student
+  <i class="material-icons right">send</i>
+  </button>
+
+  <!--   SEARCH COMPLETED REQUESTS   -->
+  <div id="query_result"></div>
+
+  <form onsubmit="search_completed()">
+      <input type="text" id="search_query">
+      <input type="submit">
+</form>
+
+
+
+  <!-- <input type="text" />
+  <button id="search_query" onclick="search_completed()" class="btn waves-effect waves-light" type="submit" name="action">Search Completed
+  <i class="material-icons right">send</i>
+  </button> -->
+
+
+
   <div class="container">
     <div class="section">
 
@@ -151,6 +176,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/edu.js"></script>
 
   </body>
 </html>
